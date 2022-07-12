@@ -1,0 +1,55 @@
+.btn-container {
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  flex-grow: 1;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+.btn-play {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-style: solid;
+  background-image: url("../../assets/music.png");
+
+  cursor: pointer;
+}
+
+.btn-stop {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-style: solid;
+  background-image: url("../../assets/music.png");
+
+  cursor: pointer;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

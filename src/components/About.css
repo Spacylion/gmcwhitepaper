@@ -1,0 +1,23 @@
+.default-page {
+  min-height: 740px;
+}
+.common-container {
+  padding: 4rem;
+  height: 50vh;
+  text-align: justify;
+  padding-left: 33%;
+  padding-right: 33%;
+}
+
+h1 {
+  text-align: left;
+}
+@media (max-width: 760px) {
+  .common-container {
+    padding: 4rem;
+    height: 50vh;
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
